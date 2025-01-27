@@ -11,7 +11,7 @@ namespace StrikerBot
         public static string GooleAIKey { get; } = Environment.GetEnvironmentVariable("GOOGLE_AI_KEY");
 
 #if !DEBUG
-        public static string BotToken  get; } = Environment.GetEnvironmentVariable("BOT_TOKEN_DEBUG");
+        public static string BotToken  { get; } = Environment.GetEnvironmentVariable("BOT_TOKEN_DEBUG");
 #else
         public static string BotToken { get; } = Environment.GetEnvironmentVariable("BOT_TOKEN");
 #endif
